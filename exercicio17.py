@@ -7,4 +7,4 @@ completo e a idade do usuário.
 nome_completo = input("Insira seu nome completo: ")
 idade = int(input("Insira sua idade: "))
 
-print(f"Como vai {nome_completo}? você tem {idade} anos de idade. ")
+print(f"Como vai {nome_completo}? você tem {idade} anos de idade! ")

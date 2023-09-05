@@ -10,14 +10,20 @@ o sindicato, faça um programa que nos dê:
 4. o salário líquido.
 
 """
-preco_hora = float(input("Informe quanto você ganha por hora: "))
-hora_mes = float(input("Informe o Total de horas trabalhadas no mês: "))
+contador = 1
+while contador <= 3:
 
-descontos = (preco_hora * hora_mes * 0.24)
-salario_liquido = (preco_hora * hora_mes - descontos)
+    preco_hora = float(input("Informe quanto você ganha por hora: "))
+    hora_mes = float(input("Informe o Total de horas trabalhadas no mês: "))
 
-print(f"Salario Bruto R$: {preco_hora * hora_mes:.2f}")
-print(f"Quanto pagou de Imposto de Renda R$: {preco_hora * hora_mes * 0.11:.2f} ")
-print(f"Quanto pagou ao INSS R$: {preco_hora * hora_mes * 0.08:.2f}")
-print(f"Quanto pagou ao Sindicato: R$: {preco_hora * hora_mes * 0.05:.2f}")
-print(f"Salário Líquido R$: {salario_liquido:.2f}")
+    descontos = (preco_hora * hora_mes * 0.24)
+    salario_liquido = (preco_hora * hora_mes - descontos)
+
+    print(f"Salario Bruto R$: {preco_hora * hora_mes:.2f}")
+    print(
+        f"Quanto pagou de Imposto de Renda R$: {preco_hora * hora_mes * 0.11:.2f} ")
+    print(f"Quanto pagou ao INSS R$: {preco_hora * hora_mes * 0.08:.2f}")
+    print(f"Quanto pagou ao Sindicato: R$: {preco_hora * hora_mes * 0.05:.2f}")
+    print(f"Salário Líquido R$: {salario_liquido:.2f}")
+
+    contador += 1

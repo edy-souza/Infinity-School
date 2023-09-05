@@ -14,4 +14,3 @@ elif n2 <= n1 and n2 <= n3:
     print(f"O mais barato é feijão, pelo preço de: {n2:.2f}")
 else:
     print(f"O mais barato é carne, pelo preço de: {n3:.2f}")
-
